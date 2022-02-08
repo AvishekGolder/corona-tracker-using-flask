@@ -14,35 +14,50 @@
 <body>
   <style>
     body{
-    background-color: rgb(97, 92, 92);
+    background-color: antiquewhite;
     font-family: 'Rowdies', cursive;
     }
     .maintext{
-      color: white;
+      color: black;
       margin-top: 20px;
+    }
+    .bgblue{
+      background-color: #900C3F;
+    }
+    .bggreen{
+      background-color: #156926b7;
+    }
+    .bgred{
+      background-color: #AA4A44;
+    }
+    .bginfo{
+      background-color: #4682B4;
     }
 
   </style>
     
-    <div class="container ">
-        <h1 class="text-center maintext">Covid 19 Tracker Bangladesh</h1><br>
+    <div class="container">
+     
+        <h1 class="text-center maintext">Covid 19 Tracker Bangladesh</h1>
+        <br>
+        
         <div class="row d-flex justify-content-center ">
           <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
-              <div class="card text-center text-light bg-primary shadow-lg p-3 mb-5">
+              <div class="card text-center text-light bgblue shadow-lg p-3 mb-5">
                 <h2 >Today Cases</h2>
                 <br>
                 <h1>{{data['todayCases']}}</h1>
               </div>
           </div>
           <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
-            <div class="card text-center text-light bg-success shadow-lg p-3 mb-5">
+            <div class="card text-center text-light bggreen shadow-lg p-3 mb-5">
               <h2 >Today Recovered</h2>
               <br>
               <h1>{{data['todayRecovered']}}</h1>
             </div>
             </div>
             <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
-                <div class="card text-center text-light bg-danger shadow-lg p-3 mb-5">
+                <div class="card text-center text-light bgred shadow-lg p-3 mb-5">
                   <h2 >Today Deaths</h2>
                   <br>
                   <h1>{{data['todayDeaths']}}</h1>
@@ -55,28 +70,28 @@
      
             <div class="row d-flex justify-content-center ">
             <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
-                <div class="card text-center text-light bg-primary shadow-lg p-3 mb-5">
+                <div class="card text-center text-light bgblue shadow-lg p-3 mb-5">
                   <h2 >Total Cases</h2>
                   <br>
                   <h1>{{data['cases']}}</h1>
                 </div>
             </div>
             <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
-              <div class="card text-center text-light bg-success shadow-lg p-3 mb-5">
+              <div class="card text-center text-light bggreen shadow-lg p-3 mb-5">
                 <h2 >Total Recovered</h2>
                 <br>
                 <h1>{{data['recovered']}}</h1>
               </div>
               </div>
               <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
-                  <div class="card text-center text-light bg-danger shadow-lg p-3 mb-5">
+                  <div class="card text-center text-light bgred shadow-lg p-3 mb-5">
                     <h2 >Total Deaths</h2>
                     <br>
                     <h1>{{data['deaths']}}</h1>
                   </div>
               </div>
               <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
-                  <div class="card text-center text-light bg-info shadow-lg p-3 mb-5">
+                  <div class="card text-center text-light bginfo shadow-lg p-3 mb-5">
                     <h2 >Total Tests</h2>
                     <br>
                     <h1>{{data['tests']}}</h1>
@@ -85,9 +100,11 @@
           </div>
       </div>
         
-
-
-
+      <h4 class="bg-danger text-center text-light">আজকের ডাটা এখনো সার্ভারে এন্ট্রি করা হয় নি এর জন্য আজকের কেস গুলা তে "0" দেখাচ্ছে। আজকের ডাটা এন্ট্রি করার সাথে সাথেই আপনারা লাইভ আপডেট পেয়ে যাবেন। </h4>
+      <br>
+      <footer>
+        <h3 class="text-center ">&copy; Avishek Golder</h3>
+      </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
